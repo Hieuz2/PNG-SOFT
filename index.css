@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 25px;
+    background-color: #F8F8FF;
+    margin-top: 30px;
+}
+
+.table-container {
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    /* border: 1px  #FFFFFF;  */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: #FFFFFF;       
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+th {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CDC9C9;
+}
+
+td {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CDC9C9;
+}
+
+
+/**/
+
+.head {
+    display: flex;
+    gap: 20px;
+}
+
+#brick {
+    height: 25px;
+    width: 4px;
+    background: #00BFFF;
+}
+
+.brick2 {
+    width: 100%;
+    height: 1px;
+    background: #828282;
+
+}
+
+.head2 {
+    display: flex;
+    gap: 7px;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.icon-button {
+    display: flex;
+    gap: 10px;
+    background-color: #00BFFF;
+    /* border: 1px ; */
+    border-radius: 0.5rem;
+    border: 1px #FFFAFA;
+    color:#FFFAFA;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.text {
+    opacity: 0.5;
+}
+
+.text2 {
+    font-size: 40px ;
+    margin-left: 20px;
+}
+
+.tilte-table {
+    margin-left: 15px ;
+}
+
+.form-control {
+    width: 300px ;
+    height: 30px ;
+    border-radius: 0.5rem;
+}
+
+.form-control1 {
+    width: 270px ;
+    height: 30px ;
+    border-radius: 0.5rem;
+}
+
+.form-control2 {
+    width: 180px ;
+    height: 30px ;
+    border-radius: 0.5rem;
+}
+.handleicons {
+    display: flex;
+    gap: 5px;
+    height: 40px ;
+    margin-top: 15px;
+    
+}
+
+.icon-image {
+    margin-right: 5px ;
+}
+
+.icon-image2 {
+    height: 15px ;
+    width: 15px ;
+    background-color: #FFFAFA;
+}
+
+.icon-image3 {
+    height: 15px ;
+    width: 15px ;
+}
+.icon-button1 {
+    align-items: center;
+    background-color: #FFFAFA;
+    border-radius: 0.5rem;
+    width: 40px ;
+    height: 40px ;
+}
+
+.icon-button2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.icon-button3 {
+    align-items: center;
+    background-color: #D3D3D3;
+    border-radius: 0.5rem;
+    width: 40px ;
+    height: 40px ;
+    border: none ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.handleicons2 {
+    margin-top: 25px ;
+}
+
+.brick2 {
+    width: 100%;
+    height: 1px ;
+    background: #CDC9C9;
+}
+
+.question {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px ;
+}
+
+/*popup */
+
+
+
+
+/* Kiểu cho vùng chứa cửa sổ bật lên */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Kiểu cho nội dung bật lên */
+.popup-content {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 550px;
+}
+
+/* Kiểu cho nút đóng */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Kiểu cho lớp phủ tối*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+#toggleIcon {
+    width: 40px ;
+    height: 40px ;
+}
+
+.flex {
+    display: flex;
+    gap: 3px;
+    margin-left: 20px;
+}
+
+.flex2 {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.flex3 {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.text-box {
+    width: 570px;
+    height: 150px;
+    border-radius: 0.5rem;
+}
+
+.btn-submit {
+    width: 60px;
+    height: 35px;
+    background-color: #00BFFF;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 20px;
+}
+.flex4 {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+

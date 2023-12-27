@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    
+
+    <title>Cấu Hình Tỷ Giá</title>
+    
+</head>
+<body >
+    <div  >
+        <div class="all" >
+            <div class="head" >
+                <div class="title" >Cấu Hình Tỷ Giá</div>
+                <a href="" class="question" ><img src="./icons/question-circle.svg" alt="Icon" class="icon-image"></a>
+                
+                <a href="" class="icon-button">
+                    <img src="./icons/plus-solid.svg" alt="Icon" class="icon-image">
+                    thêm mới
+                </a>
+            </div>
+
+            <div class="head2" >
+                <div id="brick" ></div>
+                <div class="text" >cấu hình tỷ giá quy đổi của các loại tiền tệ</div>
+            </div>
+            <div class="table-container">
+                <div class="search-container" >
+                    <div>
+                        <div>Danh mục </div>
+                        <select  name="" class="form-control">
+                            <option >Sales Exchange Rate</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            
+                        </select>
+                    </div>
+                    <div>
+                        <div>Lọc theo tiền tệ </div>
+                        <select  name="" class="form-control">
+                            <option >--Chọn--</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            >
+                        </select>
+                    </div>
+                    <div>
+                        <div>ngày </div>
+                        <input type="date" class="form-control" >
+                    </div>
+                    <div class="handleicons" >
+                        <a href="" class="icon-button">
+                            <img src="./icons/filter-solid.svg" alt="Icon" class="icon-image">
+                            Lọc
+                        </a>
+                        <button class="icon-button1">
+                            <img src="./icons/arrows-rotate-solid.svg" alt="Icon" class="icon-image2">
+                        </button>
+                    </div>
+                    <div class="handleicons2" >
+                        <a href="" ><img src="./icons/magnifying-glass-solid.svg" alt="Icon" class="icon-image"></a>
+                        <a href="" ><img src="./icons/angle-down-solid.svg" alt="Icon" class="icon-image"></a>
+                    </div>
+                </div>
+                <table class="tilte-table" >
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th></th>
+                            <th>Tiền Tệ</th>
+                            <th>Tiền Tệ Quy Đổi</th>
+                            <th>Ngày bắt đầu -ngày</th>
+                            <th>Tỉ giá quy đổi</th>
+                            <th>Tỉ giá chia</th>
+                            <th>Mô tả</th>
+                            <th>Ngày Tạo</th>
+                            <th>Thao tác</th>
+                            
+                        </tr>
+                        
+                    </thead>
+                    
+                    <tbody>
+                        
+                        <tr>
+                                    
+                            <td>1</td>
+                            
+                                <td class="icon-button2" >
+                                    <a href="#" onclick="openPopup()" class="icon-button3">
+                                        <img src="./icons/pencil-solid.svg" alt="Icon" class="icon-image3">
+                                    </a>
+                                    <a href="#" class="icon-button3">
+                                        <img src="./icons/clone-regular.svg" alt="Icon" class="icon-image3">
+                                    </a>
+                                </td>
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                
+                                    <a href="" class="icon-button3">
+                                        <img src="./icons/trash-can-solid.svg" alt="Icon" class="icon-image3">
+                                
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                                        
+                            <td>2</td>
+                            
+                            <td class="icon-button2" >
+                                <a href=""  class="icon-button3">
+                                    <img src="./icons/pencil-solid.svg" alt="Icon" class="icon-image3">
+                                </a>
+                                <a href="" class="icon-button3">
+                                    <img src="./icons/clone-regular.svg" alt="Icon" class="icon-image3">
+                                </a>
+                            </td>
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="" class="icon-button3">
+                                    <img src="./icons/trash-can-solid.svg" alt="Icon" class="icon-image3">
+                                </a>
+                            </td>
+                        </tr>
+                                    
+                                
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+        </div>
+    
+
+    <!-- popup -->
+    
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            
+            <div class="text2" >Sửa</div>
+            <div class="brick2" ></div>
+            <form class="flex-form" >
+                <div class="flex2" >
+                    <div  >
+                        <div class="flex">
+                            <div>Tiền Tệ</div>
+                            <div class="red">*</div>
+                        </div>
+                        <select  name="" class="form-control1">
+                            <option >HKD</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            >
+                        </select>
+                    </div>
+                    <div  >
+                        <div class="flex" >
+                            <div>Tiền Tệ Quy Đổi</div>
+                            <div class="red">*</div>
+                        </div>
+                        <select  name="" class="form-control1">
+                            <option >IDR</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            <option  value="">Sales Exchange Rate</option>
+                            >
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex3" >
+                    <div>
+                        <div class="flex" >
+                            <div>Ngày bắt đầu </div>
+                            <div class="red" >*</div>
+                        </div>
+                        <input type="date" class="form-control2" >
+                    </div>
+                    <div>
+                        <div class="flex" >
+                            <div>Ngày kết thúc </div>
+                            <div class="red">*</div>
+                        </div>
+                        <input type="date" class="form-control2" >
+                    </div>
+                    <div>
+                        <div class="flex" >
+                            <div>Tỷ Gía Quy Đổi</div>
+                            <div class="red">*</div>
+                        </div>
+                        <input type="text" class="form-control2" >
+                    </div>
+                </div>
+                <div class="flex" >
+                    <a href="#" onclick="toggleIcon()" ><img id="toggleIcon" src="./icons/toggle-on-solid.svg" alt="Icon On" ></a>
+                    <div>Tỉ giá chia</div>
+                </div>
+                <div class="flex4" >
+                    <div>Mô Tả</div>
+                    <input type="text" class="text-box">
+                </div>
+                <a href="" class="btn-submit">
+                    <img src="./icons/bookmark-solid.svg" alt="Icon" class="icon-image">
+                    Lưu
+                </a>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</div>
+</body>
+</html>
