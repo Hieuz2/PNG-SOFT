@@ -330,6 +330,11 @@ a.btn-submit {
     text-decoration: none;
 }
 
+.text3 {
+    display: flex;
+    align-items: center;
+}
+
 
 
 
