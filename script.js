@@ -9,11 +9,21 @@ function closePopup() {
 }
 
 
+// function toggleIcon() {
+//     var icon = document.getElementById("toggleIcon");
+
+    
+//     if (icon.src.endsWith("./icons/toggle-on-solid.svg")) {
+//         icon.src = "./icons/toggle-off-solid.svg";
+//     } else {
+//         icon.src = "./icons/toggle-on-solid.svg";
+//     }
+// }
+
 function toggleIcon() {
     var icon = document.getElementById("toggleIcon");
 
-    
-    if (icon.src.endsWith("./icons/toggle-on-solid.svg")) {
+    if (icon.src.includes("toggle-on-solid.svg")) {
         icon.src = "./icons/toggle-off-solid.svg";
     } else {
         icon.src = "./icons/toggle-on-solid.svg";

@@ -90,7 +90,7 @@ td {
     border-radius: 0.5rem;
     border: 1px #FFFAFA;
     color:#FFFAFA;
-    width: 120px;
+    width: 80px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -101,7 +101,7 @@ td {
 }
 
 .text2 {
-    font-size: 40px ;
+    font-size: 30px ;
     margin-left: 20px;
 }
 
@@ -134,7 +134,7 @@ td {
     
 }
 
-.icon-image {
+.icon-image4 {
     margin-right: 5px ;
 }
 
@@ -154,6 +154,10 @@ td {
     border-radius: 0.5rem;
     width: 40px ;
     height: 40px ;
+    border: 2px solid black;
+    display: flex ;
+    justify-content: center;
+   
 }
 
 .icon-button2 {
@@ -171,7 +175,20 @@ td {
     border: none ;
     display: flex ;
     justify-content: center;
+    
+}
+
+.icon-button4 {
+    display: flex;
+    gap: 10px;
+    background-color: #00BFFF;
+    border-radius: 0.5rem;
+    border: 1px #FFFAFA;
+    color:#FFFAFA;
+    width: 110px;
+    justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .handleicons2 {
@@ -208,7 +225,7 @@ td {
 /* Kiểu cho nội dung bật lên */
 .popup-content {
     background-color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 600px;
     height: 550px;
@@ -243,7 +260,8 @@ td {
 .flex {
     display: flex;
     gap: 3px;
-    margin-left: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .flex2 {
@@ -261,7 +279,9 @@ td {
 .flex-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .red {
@@ -288,6 +308,26 @@ td {
 }
 .flex4 {
     margin-left: 20px;
+}
+
+.flex5 {
+    display: flex;
+    gap: 3px;
+    margin-left: 20px; 
+}
+
+a.icon-button {
+    text-decoration: none;
+    
+}
+
+a.icon-button4 {
+    text-decoration: none;
+    
+}
+
+a.btn-submit {
+    text-decoration: none;
 }
 
 
