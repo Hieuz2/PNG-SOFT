@@ -252,6 +252,7 @@ td {
     z-index: 0;
 }
 
+/* */
 #toggleIcon {
     width: 40px ;
     height: 40px ;
@@ -333,6 +334,16 @@ a.btn-submit {
 .text3 {
     display: flex;
     align-items: center;
+}
+
+
+/* CSS */
+
+tbody tr:nth-child(odd) td{
+    background-color: #F5F5F5;
+}
+tbody tr:nth-child(even) td{
+    background-color: white;
 }
 
 

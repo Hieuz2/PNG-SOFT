@@ -19,3 +19,11 @@ function toggleIcon() {
         icon.src = "./icons/toggle-on-solid.svg";
     }
 }
+
+
+// $(document).ready(function()
+// {
+//   $("tr:odd").css({
+//     "background-color":"#000",
+//     "color":"#fff"});
+// });
